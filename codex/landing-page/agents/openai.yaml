@@ -1,0 +1,4 @@
+interface:
+  display_name: "Landing Page"
+  short_description: "Design, build and ship a single-page showcase site on GitHub Pages"
+  default_prompt: "Use $landing-page to plan, prototype, build and deploy a single-page landing site, agreeing on the direction with me before building."
