@@ -1,5 +1,7 @@
 # Landing Page Skill
 
+**Website:** https://nikihu-a.github.io/landing-page-skill/
+
 An agent skill for designing, building and shipping a **single-page showcase site** (portfolio, gallery, product or exhibition page) as a static site on GitHub Pages. It covers the work from brainstorm to a verified live deploy, plus a share image and promo videos.
 
 It was distilled from building [**Louvre After Dark**](https://nikihu-a.github.io/louvre-after-dark/) ([source](https://github.com/Nikihu-a/louvre-after-dark)), a 3D single-page gallery of ten Louvre paintings.

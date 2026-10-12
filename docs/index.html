@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Landing Page Skill</title>
+  <meta name="description" content="An agent skill for Claude Code and Codex that makes single-page sites the way Louvre After Dark was made: agree first, prototype one piece, build, verify, deploy, promote. By Niki.">
+  <meta name="author" content="Niki">
+  <meta name="theme-color" content="#07060a">
+  <meta property="og:title" content="Landing Page Skill — agree first, then build">
+  <meta property="og:description" content="Everything learned shipping Louvre After Dark, packed into one agent skill for Claude Code and Codex.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nikihu-a.github.io/landing-page-skill/">
+  <meta property="og:image" content="https://nikihu-a.github.io/landing-page-skill/assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307060a'/%3E%3Cpath d='M9 22h14M11 22V12m10 10V12M9 12l7-4 7 4' fill='none' stroke='%23d9b26f' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="logo" href="#top">LANDING<i>·</i>PAGE</a>
+    <a class="toplink" href="https://github.com/Nikihu-a/landing-page-skill">GitHub</a>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-floor" aria-hidden="true"></div>
+      <div class="hero-lamp" aria-hidden="true"></div>
+      <div class="hero-in">
+        <p class="eyebrow">An agent skill for Claude Code &amp; Codex</p>
+        <h1>Agree first.<br><em>Then build.</em></h1>
+        <p class="lede">A skill that teaches an AI agent to make a single-page site the way <a href="https://nikihu-a.github.io/louvre-after-dark/">Louvre After Dark</a> was made: brainstorm, prototype one piece, build, verify, deploy, then promote it.</p>
+        <div class="cta">
+          <a class="btn btn-gold" href="#install">Install</a>
+          <a class="btn" href="https://github.com/Nikihu-a/landing-page-skill">View source</a>
+        </div>
+      </div>
+      <p class="hero-hint" aria-hidden="true">Scroll for the making-of</p>
+    </section>
+
+    <!-- Origin -->
+    <section class="origin reveal">
+      <p class="kicker">The making-of</p>
+      <p class="origin-text">Ten Louvre paintings, 1483 to 1830, hung on a curved wall in a dark 3D gallery. It took six stages, a few rollbacks and one long list of rules. <em>This skill is that list.</em></p>
+    </section>
+
+    <!-- Stages -->
+    <ol class="stages">
+      <li class="stage reveal">
+        <div class="stage-text">
+          <p class="stage-n">01 <span>Brainstorm</span></p>
+          <h2>A preference is <em>not</em> a go-ahead.</h2>
+          <p>Ask what the page is for, who it is for, and the one feeling it should leave. Read the references for what actually works. Then offer two or three directions with a recommendation, and wait for a clear yes.</p>
+        </div>
+        <figure class="stage-media chat" aria-label="An exchange between Niki and the agent">
+          <div class="msg msg-user"><span class="who">Niki</span><p lang="zh">我觉得 b 好</p><small>I think B is good.</small></div>
+          <div class="msg msg-agent"><span class="who">Agent</span><p lang="zh">要现在开始做吗？</p><small>Shall I start now?</small></div>
+          <figcaption>The rule that came from a rollback.</figcaption>
+        </figure>
+      </li>
+
+      <li class="stage reveal">
+        <div class="stage-text">
+          <p class="stage-n">02 <span>Prototype</span></p>
+          <h2>One painting <em>before</em> ten.</h2>
+          <p>Build the hero and a single item first, show it, and get a “满意” (satisfied). Anything that moves gets a short video sample on a branch, so nothing unapproved reaches the live site.</p>
+        </div>
+        <figure class="stage-media frame">
+          <img src="assets/one-painting.webp" width="1600" height="900" loading="lazy" alt="Liberty Leading the People in the site's depth view, lit by a lamp">
+          <figcaption>Liberty Leading the People, in depth.</figcaption>
+        </figure>
+      </li>
+
+      <li class="stage reveal">
+        <div class="stage-text">
+          <p class="stage-n">03 <span>Build</span></p>
+          <h2>No build step. <em>Nothing borrowed at runtime.</em></h2>
+          <ul class="ticks">
+            <li>Plain HTML, CSS and ES modules on any static host</li>
+            <li>three.js and the fonts are copied into the repo</li>
+            <li>WebP images; the first few load, the rest stream in</li>
+            <li>Resolution steps down when frames run long</li>
+            <li>A <code>?static</code> fallback, and reduced motion respected</li>
+          </ul>
+        </div>
+        <figure class="stage-media frame">
+          <img src="assets/gallery.webp" width="1600" height="900" loading="lazy" alt="The 3D gallery: paintings on a curved wall above a reflective grid floor">
+          <figcaption>The curved timeline and its reflective floor.</figcaption>
+        </figure>
+      </li>
+
+      <li class="stage reveal">
+        <div class="stage-text">
+          <p class="stage-n">04 <span>Verify</span></p>
+          <h2>Look <em>before</em> you say it works.</h2>
+          <p>After every change, reload and read the page, take a screenshot, then check it on a phone. For video, a fake clock steps the page frame by frame, so captures stay smooth even in a hidden tab.</p>
+        </div>
+        <figure class="stage-media checklist" aria-label="Verification checklist">
+          <ul>
+            <li><span>Console</span><b>0 errors</b></li>
+            <li><span>Rendered text</span><b>matches</b></li>
+            <li><span>Phone, 375 px</span><b>no side scroll</b></li>
+            <li><span>Reduced motion</span><b>calm</b></li>
+            <li><span>No WebGL</span><b>static page</b></li>
+            <li><span>Sound on entry</span><b>off</b></li>
+          </ul>
+        </figure>
+      </li>
+
+      <li class="stage reveal">
+        <div class="stage-text">
+          <p class="stage-n">05 <span>Deploy</span></p>
+          <h2>Live means <em>the hashes match.</em></h2>
+          <p>Push to GitHub Pages and wait for the build. Then compare every live file with the local one, byte for byte. Only then does the agent say it is live.</p>
+        </div>
+        <figure class="stage-media term" aria-label="Deploy commands">
+<pre><code><span class="c"># bump ?v=N, commit, push with retries</span>
+<span class="p">$</span> git push
+<span class="p">$</span> gh api repos/…/pages/builds/latest
+built  8af849d
+<span class="p">$</span> verify_deploy.sh https://…/louvre-after-dark/ \
+    index.html js/app.js css/style.css
+<span class="ok">ok</span>    index.html
+<span class="ok">ok</span>    js/app.js
+<span class="ok">ok</span>    css/style.css</code></pre>
+        </figure>
+      </li>
+
+      <li class="stage reveal">
+        <div class="stage-text">
+          <p class="stage-n">06 <span>Promote</span></p>
+          <h2>Then make people <em>look closer.</em></h2>
+          <p>A share image, a landscape trailer with titles in two languages, and short films that each reveal one hidden detail. Inside the page, small living details: the raft of the Medusa rocks on the swell.</p>
+        </div>
+        <figure class="stage-media frame duo">
+          <video src="assets/medusa-living.mp4" poster="assets/medusa-poster.webp" width="1280" height="720" muted loop playsinline preload="none" aria-label="The Raft of the Medusa gently rocking"></video>
+          <img src="assets/trailer.webp" width="1600" height="900" loading="lazy" alt="A trailer frame: The Cheat with the Ace of Diamonds with English and Chinese titles">
+          <figcaption>The living Medusa, and a frame from the bilingual trailer.</figcaption>
+        </figure>
+      </li>
+    </ol>
+
+    <!-- Rules -->
+    <section class="rules reveal" aria-labelledby="rules-h">
+      <p class="kicker">Written into the skill</p>
+      <h2 id="rules-h">Nine rules for <em>working with a person</em></h2>
+      <ol class="rule-list">
+        <li>Brainstorm before code.</li>
+        <li>Analyse references; don't copy them.</li>
+        <li>“Just look” means look, and change nothing.</li>
+        <li>A preference is not a go-ahead.</li>
+        <li>Prototype one piece first.</li>
+        <li>Anything that moves gets a video sample.</li>
+        <li>Never break the live site with an experiment.</li>
+        <li>Big rewrites need permission.</li>
+        <li>When something is removed, it stays removed.</li>
+      </ol>
+    </section>
+
+    <!-- Taste -->
+    <section class="taste reveal" aria-labelledby="taste-h">
+      <p class="kicker">Design defaults</p>
+      <h2 id="taste-h">Taste, <em>written down</em></h2>
+      <div class="taste-grid">
+        <div><h3>One page</h3><p>No sub-pages. Deep views are in-page modes with their own links.</p></div>
+        <div><h3>A quiet frame</h3><p>A logo and the switches people need. Taglines and bylines all went.</p></div>
+        <div><h3>A light serif</h3><p>Cormorant at 300, with gold italics for emphasis.</p></div>
+        <div><h3>Sound off</h3><p>Never on by itself. The button names what it will do.</p></div>
+        <div><h3>Detail over chrome</h3><p>Once the frame is set, the delight goes inside each item.</p></div>
+        <div><h3>One signature</h3><p>The owner's name appears once, where it means something.</p></div>
+      </div>
+    </section>
+
+    <!-- Pitfalls -->
+    <section class="pitfalls reveal" aria-labelledby="pit-h">
+      <p class="kicker">From the bug log</p>
+      <h2 id="pit-h">Every pitfall, <em>labelled</em></h2>
+      <div class="labels">
+        <article class="label"><p class="y">Reflections</p><h3>Invisible floor reflections</h3><p class="a">Mirrored meshes were culled. Fix: render both sides.</p></article>
+        <article class="label"><p class="y">Caching</p><h3>Yesterday's JavaScript</h3><p class="a">The browser kept old files. Fix: a no-cache dev server and <code>?v=N</code>.</p></article>
+        <article class="label"><p class="y">Video</p><h3>A 208 MB trailer</h3><p class="a">Film grain defeats compression. Fix: leave it out of the render (31 MB).</p></article>
+        <article class="label"><p class="y">Capture</p><h3>Frozen animation</h3><p class="a">Hidden tabs throttle frames. Fix: a fake clock injected for recording.</p></article>
+        <article class="label"><p class="y">CSS</p><h3>A drifting hotspot</h3><p class="a">Scale fought the JS translate. Fix: highlight with a glow.</p></article>
+        <article class="label"><p class="y">Sound</p><h3>Music that played itself</h3><p class="a">Fix: off by default; entering never turns it on.</p></article>
+      </div>
+    </section>
+
+    <!-- Contents -->
+    <section class="contents reveal" aria-labelledby="files-h">
+      <div class="contents-text">
+        <p class="kicker">What's inside</p>
+        <h2 id="files-h">One folder, <em>two agents</em></h2>
+        <p>The same skill comes in two copies. The Claude Code copy names Claude's own preview and file tools. The Codex copy uses general wording and adds its own metadata file.</p>
+      </div>
+      <pre class="tree" aria-label="Skill folder contents"><code>landing-page/
+├── SKILL.md               <span class="c">the workflow</span>
+├── references/
+│   ├── design-playbook.md <span class="c">taste, and why</span>
+│   ├── tech-recipes.md    <span class="c">depth parallax, audio, palettes</span>
+│   ├── deploy-github-pages.md
+│   ├── promo-video.md     <span class="c">capture + ffmpeg</span>
+│   └── pitfalls.md        <span class="c">bugs and fixes</span>
+└── scripts/
+    ├── nocache_server.py
+    ├── recorder.py + capture.js
+    └── verify_deploy.sh</code></pre>
+    </section>
+
+    <!-- Install -->
+    <section class="install reveal" id="install" aria-labelledby="install-h">
+      <p class="kicker">Install</p>
+      <h2 id="install-h">Two lines, <em>then ask for a page.</em></h2>
+      <div class="tabs" role="tablist" aria-label="Agent">
+        <button role="tab" id="tab-claude" aria-controls="pane-claude" aria-selected="true">Claude Code</button>
+        <button role="tab" id="tab-codex" aria-controls="pane-codex" aria-selected="false" tabindex="-1">Codex</button>
+      </div>
+      <div class="pane" id="pane-claude" role="tabpanel" aria-labelledby="tab-claude">
+        <div class="cmd"><code>git clone https://github.com/Nikihu-a/landing-page-skill.git</code><button class="copy" type="button">Copy</button></div>
+        <div class="cmd"><code>cp -R landing-page-skill/claude/landing-page ~/.claude/skills/</code><button class="copy" type="button">Copy</button></div>
+        <p class="note">Restart Claude Code, then say “make me a one-page site”, or type <code>/landing-page</code>.</p>
+      </div>
+      <div class="pane" id="pane-codex" role="tabpanel" aria-labelledby="tab-codex" hidden>
+        <div class="cmd"><code>git clone https://github.com/Nikihu-a/landing-page-skill.git</code><button class="copy" type="button">Copy</button></div>
+        <div class="cmd"><code>cp -R landing-page-skill/codex/landing-page ~/.codex/skills/</code><button class="copy" type="button">Copy</button></div>
+        <p class="note">Restart Codex, then say “make me a one-page site”, or type <code>$landing-page</code>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="sig">Written by <em>Niki</em>, from building <a href="https://nikihu-a.github.io/louvre-after-dark/">Louvre After Dark</a>.</p>
+    <p class="small"><a href="https://github.com/Nikihu-a/landing-page-skill">Source</a> · MIT License · Paintings public domain, Musée du Louvre · Cormorant Garamond, SIL OFL</p>
+  </footer>
+
+  <script src="main.js?v=1" type="module"></script>
+</body>
+</html>
